@@ -40,7 +40,7 @@ void main() {
         sleep(Duration(milliseconds: 500));
         for (var i = 0; i<3; i++){
         print('.');
-        sleep(Duration(milliseconds: 500));}
+        sleep(Duration(milliseconds: 500));} // 상품 목록 보여주기
        inputInt = 0;
       break;
       
@@ -189,7 +189,7 @@ void main() {
       (purchase[4]*sum['E']));
       print('총 $sumAll G 입니다.');
       print(bar);
-      sleep(Duration(milliseconds: 500));
+      sleep(Duration(milliseconds: 500)); // 장바구니에 담긴 총 상품 가격 보기
       break;
 
       case 4:
@@ -198,8 +198,8 @@ void main() {
        if (clearBasket.toUpperCase() == 'Y') {
         purchase = [0,0,0,0,0];
         print('장바구니가 비워졌습니다.');
-        }
-       else {inputInt = 0;}
+        } // 장바구니 비우기
+       else {inputInt = 0;} // 메뉴로 돌아가기
       break;
 
       case 5:
@@ -209,7 +209,7 @@ void main() {
         sleep(Duration(milliseconds: 200));
         print('다음에 또 오세요!');
         sleep(Duration(seconds: 1));
-        exit(0);}
+        exit(0);} //프로그램 종료
        else {inputInt = 0;}
       break;
 
